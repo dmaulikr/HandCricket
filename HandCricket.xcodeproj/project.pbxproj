@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CFDE82F1C9CC0B800F1526C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE82E1C9CC0B800F1526C /* AppDelegate.swift */; };
+		6CFDE8311C9CC0B800F1526C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE8301C9CC0B800F1526C /* ViewController.swift */; };
+		6CFDE8341C9CC0B800F1526C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDE8321C9CC0B800F1526C /* Main.storyboard */; };
+		6CFDE8361C9CC0B800F1526C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDE8351C9CC0B800F1526C /* Assets.xcassets */; };
+		6CFDE8391C9CC0B800F1526C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDE8371C9CC0B800F1526C /* LaunchScreen.storyboard */; };
+		6CFDE8441C9CC0B800F1526C /* HandCricketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE8431C9CC0B800F1526C /* HandCricketTests.swift */; };
+		6CFDE84F1C9CC0B800F1526C /* HandCricketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE84E1C9CC0B800F1526C /* HandCricketUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CFDE8401C9CC0B800F1526C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CFDE8231C9CC0B800F1526C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CFDE82A1C9CC0B800F1526C;
+			remoteInfo = HandCricket;
+		};
+		6CFDE84B1C9CC0B800F1526C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CFDE8231C9CC0B800F1526C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CFDE82A1C9CC0B800F1526C;
+			remoteInfo = HandCricket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CFDE82B1C9CC0B800F1526C /* HandCricket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandCricket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFDE82E1C9CC0B800F1526C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CFDE8301C9CC0B800F1526C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CFDE8331C9CC0B800F1526C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CFDE8351C9CC0B800F1526C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CFDE8381C9CC0B800F1526C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CFDE83A1C9CC0B800F1526C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFDE83F1C9CC0B800F1526C /* HandCricketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandCricketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFDE8431C9CC0B800F1526C /* HandCricketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandCricketTests.swift; sourceTree = "<group>"; };
+		6CFDE8451C9CC0B800F1526C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFDE84A1C9CC0B800F1526C /* HandCricketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandCricketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFDE84E1C9CC0B800F1526C /* HandCricketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandCricketUITests.swift; sourceTree = "<group>"; };
+		6CFDE8501C9CC0B800F1526C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CFDE8281C9CC0B800F1526C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFDE83C1C9CC0B800F1526C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFDE8471C9CC0B800F1526C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CFDE8221C9CC0B800F1526C = {
+			isa = PBXGroup;
+			children = (
+				6CFDE82D1C9CC0B800F1526C /* HandCricket */,
+				6CFDE8421C9CC0B800F1526C /* HandCricketTests */,
+				6CFDE84D1C9CC0B800F1526C /* HandCricketUITests */,
+				6CFDE82C1C9CC0B800F1526C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CFDE82C1C9CC0B800F1526C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CFDE82B1C9CC0B800F1526C /* HandCricket.app */,
+				6CFDE83F1C9CC0B800F1526C /* HandCricketTests.xctest */,
+				6CFDE84A1C9CC0B800F1526C /* HandCricketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CFDE82D1C9CC0B800F1526C /* HandCricket */ = {
+			isa = PBXGroup;
+			children = (
+				6CFDE82E1C9CC0B800F1526C /* AppDelegate.swift */,
+				6CFDE8301C9CC0B800F1526C /* ViewController.swift */,
+				6CFDE8321C9CC0B800F1526C /* Main.storyboard */,
+				6CFDE8351C9CC0B800F1526C /* Assets.xcassets */,
+				6CFDE8371C9CC0B800F1526C /* LaunchScreen.storyboard */,
+				6CFDE83A1C9CC0B800F1526C /* Info.plist */,
+			);
+			path = HandCricket;
+			sourceTree = "<group>";
+		};
+		6CFDE8421C9CC0B800F1526C /* HandCricketTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CFDE8431C9CC0B800F1526C /* HandCricketTests.swift */,
+				6CFDE8451C9CC0B800F1526C /* Info.plist */,
+			);
+			path = HandCricketTests;
+			sourceTree = "<group>";
+		};
+		6CFDE84D1C9CC0B800F1526C /* HandCricketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CFDE84E1C9CC0B800F1526C /* HandCricketUITests.swift */,
+				6CFDE8501C9CC0B800F1526C /* Info.plist */,
+			);
+			path = HandCricketUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CFDE82A1C9CC0B800F1526C /* HandCricket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFDE8531C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricket" */;
+			buildPhases = (
+				6CFDE8271C9CC0B800F1526C /* Sources */,
+				6CFDE8281C9CC0B800F1526C /* Frameworks */,
+				6CFDE8291C9CC0B800F1526C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandCricket;
+			productName = HandCricket;
+			productReference = 6CFDE82B1C9CC0B800F1526C /* HandCricket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CFDE83E1C9CC0B800F1526C /* HandCricketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFDE8561C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricketTests" */;
+			buildPhases = (
+				6CFDE83B1C9CC0B800F1526C /* Sources */,
+				6CFDE83C1C9CC0B800F1526C /* Frameworks */,
+				6CFDE83D1C9CC0B800F1526C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFDE8411C9CC0B800F1526C /* PBXTargetDependency */,
+			);
+			name = HandCricketTests;
+			productName = HandCricketTests;
+			productReference = 6CFDE83F1C9CC0B800F1526C /* HandCricketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CFDE8491C9CC0B800F1526C /* HandCricketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFDE8591C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricketUITests" */;
+			buildPhases = (
+				6CFDE8461C9CC0B800F1526C /* Sources */,
+				6CFDE8471C9CC0B800F1526C /* Frameworks */,
+				6CFDE8481C9CC0B800F1526C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFDE84C1C9CC0B800F1526C /* PBXTargetDependency */,
+			);
+			name = HandCricketUITests;
+			productName = HandCricketUITests;
+			productReference = 6CFDE84A1C9CC0B800F1526C /* HandCricketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CFDE8231C9CC0B800F1526C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Vineet Baid";
+				TargetAttributes = {
+					6CFDE82A1C9CC0B800F1526C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					6CFDE83E1C9CC0B800F1526C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 6CFDE82A1C9CC0B800F1526C;
+					};
+					6CFDE8491C9CC0B800F1526C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 6CFDE82A1C9CC0B800F1526C;
+					};
+				};
+			};
+			buildConfigurationList = 6CFDE8261C9CC0B800F1526C /* Build configuration list for PBXProject "HandCricket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CFDE8221C9CC0B800F1526C;
+			productRefGroup = 6CFDE82C1C9CC0B800F1526C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CFDE82A1C9CC0B800F1526C /* HandCricket */,
+				6CFDE83E1C9CC0B800F1526C /* HandCricketTests */,
+				6CFDE8491C9CC0B800F1526C /* HandCricketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CFDE8291C9CC0B800F1526C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFDE8391C9CC0B800F1526C /* LaunchScreen.storyboard in Resources */,
+				6CFDE8361C9CC0B800F1526C /* Assets.xcassets in Resources */,
+				6CFDE8341C9CC0B800F1526C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFDE83D1C9CC0B800F1526C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFDE8481C9CC0B800F1526C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CFDE8271C9CC0B800F1526C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFDE8311C9CC0B800F1526C /* ViewController.swift in Sources */,
+				6CFDE82F1C9CC0B800F1526C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFDE83B1C9CC0B800F1526C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFDE8441C9CC0B800F1526C /* HandCricketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFDE8461C9CC0B800F1526C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFDE84F1C9CC0B800F1526C /* HandCricketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CFDE8411C9CC0B800F1526C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CFDE82A1C9CC0B800F1526C /* HandCricket */;
+			targetProxy = 6CFDE8401C9CC0B800F1526C /* PBXContainerItemProxy */;
+		};
+		6CFDE84C1C9CC0B800F1526C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CFDE82A1C9CC0B800F1526C /* HandCricket */;
+			targetProxy = 6CFDE84B1C9CC0B800F1526C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CFDE8321C9CC0B800F1526C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CFDE8331C9CC0B800F1526C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CFDE8371C9CC0B800F1526C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CFDE8381C9CC0B800F1526C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CFDE8511C9CC0B800F1526C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CFDE8521C9CC0B800F1526C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CFDE8541C9CC0B800F1526C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HandCricket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VineetBaid.HandCricket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CFDE8551C9CC0B800F1526C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HandCricket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VineetBaid.HandCricket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6CFDE8571C9CC0B800F1526C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HandCricketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VineetBaid.HandCricketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandCricket.app/HandCricket";
+			};
+			name = Debug;
+		};
+		6CFDE8581C9CC0B800F1526C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HandCricketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VineetBaid.HandCricketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandCricket.app/HandCricket";
+			};
+			name = Release;
+		};
+		6CFDE85A1C9CC0B800F1526C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HandCricketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VineetBaid.HandCricketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HandCricket;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6CFDE85B1C9CC0B800F1526C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HandCricketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VineetBaid.HandCricketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HandCricket;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CFDE8261C9CC0B800F1526C /* Build configuration list for PBXProject "HandCricket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFDE8511C9CC0B800F1526C /* Debug */,
+				6CFDE8521C9CC0B800F1526C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CFDE8531C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFDE8541C9CC0B800F1526C /* Debug */,
+				6CFDE8551C9CC0B800F1526C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CFDE8561C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFDE8571C9CC0B800F1526C /* Debug */,
+				6CFDE8581C9CC0B800F1526C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CFDE8591C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFDE85A1C9CC0B800F1526C /* Debug */,
+				6CFDE85B1C9CC0B800F1526C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CFDE8231C9CC0B800F1526C /* Project object */;
+}
