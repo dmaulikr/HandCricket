@@ -14,6 +14,9 @@
 		6CFDE8391C9CC0B800F1526C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDE8371C9CC0B800F1526C /* LaunchScreen.storyboard */; };
 		6CFDE8441C9CC0B800F1526C /* HandCricketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE8431C9CC0B800F1526C /* HandCricketTests.swift */; };
 		6CFDE84F1C9CC0B800F1526C /* HandCricketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE84E1C9CC0B800F1526C /* HandCricketUITests.swift */; };
+		6CFDE85D1C9CC12C00F1526C /* HandCricketBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE85C1C9CC12C00F1526C /* HandCricketBrain.swift */; };
+		6CFDE8611C9CC21C00F1526C /* ChooseBattingOrBowling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE8601C9CC21C00F1526C /* ChooseBattingOrBowling.swift */; };
+		6CFDE8631C9CC3D200F1526C /* ViewTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE8621C9CC3D200F1526C /* ViewTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		6CFDE84A1C9CC0B800F1526C /* HandCricketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandCricketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFDE84E1C9CC0B800F1526C /* HandCricketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandCricketUITests.swift; sourceTree = "<group>"; };
 		6CFDE8501C9CC0B800F1526C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFDE85C1C9CC12C00F1526C /* HandCricketBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandCricketBrain.swift; sourceTree = "<group>"; };
+		6CFDE8601C9CC21C00F1526C /* ChooseBattingOrBowling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseBattingOrBowling.swift; path = ../ChooseBattingOrBowling.swift; sourceTree = "<group>"; };
+		6CFDE8621C9CC3D200F1526C /* ViewTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		6CFDE82D1C9CC0B800F1526C /* HandCricket */ = {
 			isa = PBXGroup;
 			children = (
+				6CFDE8601C9CC21C00F1526C /* ChooseBattingOrBowling.swift */,
 				6CFDE82E1C9CC0B800F1526C /* AppDelegate.swift */,
 				6CFDE8301C9CC0B800F1526C /* ViewController.swift */,
+				6CFDE85C1C9CC12C00F1526C /* HandCricketBrain.swift */,
 				6CFDE8321C9CC0B800F1526C /* Main.storyboard */,
+				6CFDE8621C9CC3D200F1526C /* ViewTwoViewController.swift */,
 				6CFDE8351C9CC0B800F1526C /* Assets.xcassets */,
 				6CFDE8371C9CC0B800F1526C /* LaunchScreen.storyboard */,
 				6CFDE83A1C9CC0B800F1526C /* Info.plist */,
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFDE8611C9CC21C00F1526C /* ChooseBattingOrBowling.swift in Sources */,
+				6CFDE8631C9CC3D200F1526C /* ViewTwoViewController.swift in Sources */,
 				6CFDE8311C9CC0B800F1526C /* ViewController.swift in Sources */,
+				6CFDE85D1C9CC12C00F1526C /* HandCricketBrain.swift in Sources */,
 				6CFDE82F1C9CC0B800F1526C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
