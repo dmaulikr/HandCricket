@@ -17,6 +17,9 @@
 		6CFDE85D1C9CC12C00F1526C /* HandCricketBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE85C1C9CC12C00F1526C /* HandCricketBrain.swift */; };
 		6CFDE8611C9CC21C00F1526C /* ChooseBattingOrBowling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE8601C9CC21C00F1526C /* ChooseBattingOrBowling.swift */; };
 		6CFDE8631C9CC3D200F1526C /* ViewTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFDE8621C9CC3D200F1526C /* ViewTwoViewController.swift */; };
+		6CFDE8651C9CD26A00F1526C /* cricket-150554_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDE8641C9CD26A00F1526C /* cricket-150554_960_720.png */; };
+		6CFDE8671C9CD27F00F1526C /* cricket-150561_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDE8661C9CD27F00F1526C /* cricket-150561_960_720.png */; };
+		6CFDE8691C9CEC9800F1526C /* blurred-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CFDE8681C9CEC9800F1526C /* blurred-background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		6CFDE85C1C9CC12C00F1526C /* HandCricketBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandCricketBrain.swift; sourceTree = "<group>"; };
 		6CFDE8601C9CC21C00F1526C /* ChooseBattingOrBowling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseBattingOrBowling.swift; path = ../ChooseBattingOrBowling.swift; sourceTree = "<group>"; };
 		6CFDE8621C9CC3D200F1526C /* ViewTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTwoViewController.swift; sourceTree = "<group>"; };
+		6CFDE8641C9CD26A00F1526C /* cricket-150554_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cricket-150554_960_720.png"; path = "../../../Desktop/cricket-150554_960_720.png"; sourceTree = "<group>"; };
+		6CFDE8661C9CD27F00F1526C /* cricket-150561_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cricket-150561_960_720.png"; sourceTree = "<group>"; };
+		6CFDE8681C9CEC9800F1526C /* blurred-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blurred-background.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +109,16 @@
 		6CFDE82D1C9CC0B800F1526C /* HandCricket */ = {
 			isa = PBXGroup;
 			children = (
-				6CFDE8601C9CC21C00F1526C /* ChooseBattingOrBowling.swift */,
 				6CFDE82E1C9CC0B800F1526C /* AppDelegate.swift */,
+				6CFDE8601C9CC21C00F1526C /* ChooseBattingOrBowling.swift */,
 				6CFDE8301C9CC0B800F1526C /* ViewController.swift */,
 				6CFDE85C1C9CC12C00F1526C /* HandCricketBrain.swift */,
 				6CFDE8321C9CC0B800F1526C /* Main.storyboard */,
 				6CFDE8621C9CC3D200F1526C /* ViewTwoViewController.swift */,
 				6CFDE8351C9CC0B800F1526C /* Assets.xcassets */,
+				6CFDE8641C9CD26A00F1526C /* cricket-150554_960_720.png */,
+				6CFDE8661C9CD27F00F1526C /* cricket-150561_960_720.png */,
+				6CFDE8681C9CEC9800F1526C /* blurred-background.jpg */,
 				6CFDE8371C9CC0B800F1526C /* LaunchScreen.storyboard */,
 				6CFDE83A1C9CC0B800F1526C /* Info.plist */,
 			);
@@ -238,7 +247,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFDE8691C9CEC9800F1526C /* blurred-background.jpg in Resources */,
 				6CFDE8391C9CC0B800F1526C /* LaunchScreen.storyboard in Resources */,
+				6CFDE8651C9CD26A00F1526C /* cricket-150554_960_720.png in Resources */,
+				6CFDE8671C9CD27F00F1526C /* cricket-150561_960_720.png in Resources */,
 				6CFDE8361C9CC0B800F1526C /* Assets.xcassets in Resources */,
 				6CFDE8341C9CC0B800F1526C /* Main.storyboard in Resources */,
 			);
@@ -496,6 +508,7 @@
 				6CFDE8551C9CC0B800F1526C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFDE8561C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricketTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				6CFDE8581C9CC0B800F1526C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CFDE8591C9CC0B800F1526C /* Build configuration list for PBXNativeTarget "HandCricketUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				6CFDE85B1C9CC0B800F1526C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
