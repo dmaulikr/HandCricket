@@ -86,6 +86,9 @@
                                 <state key="normal" title="Bowling">
                                     <color key="titleColor" red="0.29692619918859064" green="0.35723142026442961" blue="0.7352152627382551" alpha="0.80350215517241375" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LyT-cw-kwW" kind="show" id="7L6-LU-fPR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRO-ZY-bXa">
                                 <rect key="frame" x="146" y="321" width="123" height="94"/>
@@ -93,6 +96,9 @@
                                 <state key="normal" title="Batting">
                                     <color key="titleColor" red="0.29692619918859064" green="0.63884845046577188" blue="0.30256530468456383" alpha="0.80350215517241375" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LyT-cw-kwW" kind="show" id="UbI-Xg-wiy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +112,7 @@
         <!--View Controller-->
         <scene sceneID="REh-3N-mGC">
             <objects>
-                <viewController id="LyT-cw-kwW" sceneMemberID="viewController">
+                <viewController id="LyT-cw-kwW" customClass="ViewController" customModule="HandCricket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LVW-2c-47m"/>
                         <viewControllerLayoutGuide type="bottom" id="TC2-1G-IwH"/>
@@ -114,18 +120,107 @@
                     <view key="view" contentMode="scaleToFill" id="16g-eS-nRn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lA-AF-Uxc">
+                                <rect key="frame" x="20" y="294" width="110" height="70"/>
+                                <color key="backgroundColor" red="0.55686274509803924" green="0.56862745098039214" blue="0.57647058823529407" alpha="0.79927262931034482" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="42"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.36862745098039218" blue="0.25490196078431371" alpha="0.80350215517241375" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pick:" destination="LyT-cw-kwW" eventType="touchUpInside" id="4o1-xN-FuH"/>
+                                    <segue destination="zwg-kD-6F9" kind="presentation" id="0P6-w4-Qma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rge-oa-djK">
+                                <rect key="frame" x="152" y="294" width="110" height="70"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.79927262929999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="42"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.1960784314" green="0.36862745099999999" blue="0.25490196079999999" alpha="0.80350215520000001" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pick:" destination="LyT-cw-kwW" eventType="touchUpInside" id="j4K-Ae-UVS"/>
+                                    <segue destination="zwg-kD-6F9" kind="presentation" id="9Nn-Bl-Oxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDp-PT-caq">
+                                <rect key="frame" x="284" y="294" width="110" height="70"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.79927262929999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="42"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.1960784314" green="0.36862745099999999" blue="0.25490196079999999" alpha="0.80350215520000001" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pick:" destination="LyT-cw-kwW" eventType="touchUpInside" id="pdJ-eC-vtL"/>
+                                    <segue destination="zwg-kD-6F9" kind="presentation" id="qjC-5f-Yvt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lc-s9-u1n">
+                                <rect key="frame" x="20" y="372" width="110" height="70"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.79927262929999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="42"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.1960784314" green="0.36862745099999999" blue="0.25490196079999999" alpha="0.80350215520000001" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pick:" destination="LyT-cw-kwW" eventType="touchUpInside" id="aO1-mm-2Fc"/>
+                                    <segue destination="zwg-kD-6F9" kind="presentation" id="bKq-EJ-kHh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sat-Rx-ebC">
+                                <rect key="frame" x="152" y="372" width="110" height="70"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.79927262929999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="42"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.1960784314" green="0.36862745099999999" blue="0.25490196079999999" alpha="0.80350215520000001" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pick:" destination="LyT-cw-kwW" eventType="touchUpInside" id="NPa-cE-F8Q"/>
+                                    <segue destination="zwg-kD-6F9" kind="presentation" id="jHi-Zk-EAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCj-Fn-x8R">
+                                <rect key="frame" x="284" y="372" width="110" height="70"/>
+                                <color key="backgroundColor" red="0.5568627451" green="0.56862745100000001" blue="0.57647058819999997" alpha="0.79927262929999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="42"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.1960784314" green="0.36862745099999999" blue="0.25490196079999999" alpha="0.80350215520000001" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pick:" destination="LyT-cw-kwW" eventType="touchUpInside" id="O8y-G6-GoX"/>
+                                    <segue destination="zwg-kD-6F9" kind="presentation" id="tx2-9j-QEg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FTg-rH-NPU">
+                                <rect key="frame" x="104" y="567" width="206" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrF-Ma-J2O">
+                                <rect key="frame" x="92" y="78" width="231" height="46"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="batOrBowl" destination="KrF-Ma-J2O" id="ULP-9e-ybh"/>
+                        <outlet property="scoreViewer" destination="FTg-rH-NPU" id="Q0e-Zj-bni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ous-Rc-q0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1353" y="399"/>
         </scene>
-        <!--View Controller-->
+        <!--View Two View Controller-->
         <scene sceneID="eLB-bU-x4u">
             <objects>
-                <viewController id="zwg-kD-6F9" sceneMemberID="viewController">
+                <viewController id="zwg-kD-6F9" customClass="ViewTwoViewController" customModule="HandCricket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f3V-9B-iGz"/>
                         <viewControllerLayoutGuide type="bottom" id="7zu-NG-5V8"/>
@@ -133,18 +228,63 @@
                     <view key="view" contentMode="scaleToFill" id="oVN-dD-b0e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp1-oh-biB">
+                                <rect key="frame" x="20" y="342" width="374" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-rK-VPA">
+                                <rect key="frame" x="139" y="462" width="137" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next Ball"/>
+                                <connections>
+                                    <action selector="backToViewController:" destination="zwg-kD-6F9" eventType="touchUpInside" id="h22-8W-dcz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljV-ff-gcc">
+                                <rect key="frame" x="25" y="141" width="92" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opponent-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBk-F2-PBr">
+                                <rect key="frame" x="25" y="194" width="92" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj1-qx-Vj5">
+                                <rect key="frame" x="139" y="141" width="92" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-zO-mFv">
+                                <rect key="frame" x="139" y="194" width="92" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="computerPick" destination="N4a-zO-mFv" id="l2S-y6-3o7"/>
+                        <outlet property="playViewer" destination="Xp1-oh-biB" id="Slz-Sb-JOu"/>
+                        <outlet property="testOutlet" destination="Wj1-qx-Vj5" id="muV-rw-tPb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z8B-xh-S7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="399"/>
+            <point key="canvasLocation" x="1881" y="399"/>
         </scene>
-        <!--View Controller-->
+        <!--View Two View Controller-->
         <scene sceneID="VyX-XP-m4y">
             <objects>
-                <viewController id="NEo-sR-ZFO" sceneMemberID="viewController">
+                <viewController id="NEo-sR-ZFO" customClass="ViewTwoViewController" customModule="HandCricket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0Y-uK-SZF"/>
                         <viewControllerLayoutGuide type="bottom" id="llk-YH-fIK"/>
@@ -158,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cL-zS-mfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2287" y="399"/>
+            <point key="canvasLocation" x="2376" y="399"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fqd-U1-m55">
@@ -211,4 +351,8 @@
     <resources>
         <image name="cricket-150561_960_720.png" width="922" height="720"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tx2-9j-QEg"/>
+        <segue reference="UbI-Xg-wiy"/>
+    </inferredMetricsTieBreakers>
 </document>
