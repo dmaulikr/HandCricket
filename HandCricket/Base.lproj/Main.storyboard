@@ -204,6 +204,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="No target set yet" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQz-X3-CTF">
+                                <rect key="frame" x="104" y="596" width="206" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -211,6 +216,7 @@
                     <connections>
                         <outlet property="batOrBowl" destination="KrF-Ma-J2O" id="ULP-9e-ybh"/>
                         <outlet property="scoreViewer" destination="FTg-rH-NPU" id="Q0e-Zj-bni"/>
+                        <outlet property="targetShower" destination="NQz-X3-CTF" id="26e-Uz-Ff4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ous-Rc-q0c" userLabel="First Responder" sceneMemberID="firstResponder"/>

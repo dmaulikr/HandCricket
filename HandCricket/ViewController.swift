@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scoreViewer: UITextField!
     
+    @IBOutlet var targetShower: UITextField!
+    
     override func viewDidLoad() {
         batOrBowl.text! = batting ? "Batting" : "Bowling"
         print(batOrBowl.text)
@@ -45,7 +47,8 @@ class ViewController: UIViewController {
             score = 0
             secondInnings = true
             HandCricketBrain().delay(0.3) {
-                self.scoreViewer.text = "Target set of \(self.target)"
+                self.targetShower.text = "Target set of \(self.target)"
+                self.scoreViewer.text = ""
             }
             
             if batting {
