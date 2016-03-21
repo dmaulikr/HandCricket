@@ -201,7 +201,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrF-Ma-J2O">
                                 <rect key="frame" x="92" y="78" width="231" height="46"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.66666666669999997" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="No target set yet" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQz-X3-CTF">
@@ -209,6 +209,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nxj-gI-SmS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem id="YBN-bL-drB">
+                                        <barButtonItem key="leftBarButtonItem" id="Sp3-Yy-K3H">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Haf-es-44V">
+                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="Exit"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" identifier="GameOver" id="D3m-UJ-hPl"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -217,6 +235,7 @@
                         <outlet property="batOrBowl" destination="KrF-Ma-J2O" id="ULP-9e-ybh"/>
                         <outlet property="scoreViewer" destination="FTg-rH-NPU" id="Q0e-Zj-bni"/>
                         <outlet property="targetShower" destination="NQz-X3-CTF" id="26e-Uz-Ff4"/>
+                        <segue destination="NEo-sR-ZFO" kind="show" identifier="GameOver" id="jsc-Mb-bbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ous-Rc-q0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -287,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="1881" y="399"/>
         </scene>
-        <!--View Two View Controller-->
+        <!--View Controller-->
         <scene sceneID="VyX-XP-m4y">
             <objects>
-                <viewController id="NEo-sR-ZFO" customClass="ViewTwoViewController" customModule="HandCricket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NEo-sR-ZFO" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0Y-uK-SZF"/>
                         <viewControllerLayoutGuide type="bottom" id="llk-YH-fIK"/>
@@ -304,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cL-zS-mfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376" y="399"/>
+            <point key="canvasLocation" x="1881" y="-426"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fqd-U1-m55">
@@ -358,7 +377,8 @@
         <image name="cricket-150561_960_720.png" width="922" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tx2-9j-QEg"/>
+        <segue reference="D3m-UJ-hPl"/>
         <segue reference="UbI-Xg-wiy"/>
+        <segue reference="tx2-9j-QEg"/>
     </inferredMetricsTieBreakers>
 </document>

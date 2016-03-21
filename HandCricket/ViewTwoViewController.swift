@@ -39,9 +39,6 @@ class ViewTwoViewController: UIViewController {
             playViewer.text = "Out!"
             returnValue = 0
             sendScoreBack(returnValue!)
-            if secondInnings2 {
-                performSegueWithIdentifier("GameOver", sender: nil)
-            }
         }
         else {
             playViewer.text = batting2 ? "You hit \(testSegue) Runs" : "Computer hit \(computerPickScore) Runs"

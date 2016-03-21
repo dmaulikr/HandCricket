@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
     @IBAction func pick(sender: UIButton) {
         
@@ -28,7 +26,6 @@ class ViewController: UIViewController {
         print(batOrBowl.text)
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0.54, green: 0.81, blue: 0.94, alpha: 1)
-        
     }
     
     @IBOutlet var batOrBowl: UILabel!
@@ -80,7 +77,8 @@ class ViewController: UIViewController {
             
             print("\(myScore) is my Score and \(compScore) is comp score")
             HandCricketBrain().delay(0.3) {
-                self.scoreViewer.text = self.myScore>self.compScore ? "You Win" : "You Lose"
+                self.scoreViewer.text = self.myScore>self.compScore ? "You Win!! Hit Exit" : "You Lose 🙁 Hit Exit"
+                self.targetShower.text = ""
             }
             
         }
@@ -101,17 +99,21 @@ class ViewController: UIViewController {
     var compScore = 0
     // **** add this to make it so that you know when it's actually game over or not
     
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destinationViewController: ViewTwoViewController = segue.destinationViewController as! ViewTwoViewController
-        destinationViewController.testSegue = Int((sender?.currentTitle!)!)!
-        destinationViewController.batting2 = batting
-        destinationViewController.secondInnings2 = secondInnings
-        destinationViewController.sendScoreToView = {[weak self]
-            (data) in
-            if let weakSelf = self {
-                weakSelf.doSomethingTestScoreReceived(data)
+        if segue.identifier != "GameOver" {
+            let destinationViewController: ViewTwoViewController = segue.destinationViewController as! ViewTwoViewController
+            destinationViewController.testSegue = Int((sender?.currentTitle!)!)!
+            destinationViewController.batting2 = batting
+            destinationViewController.secondInnings2 = secondInnings
+            destinationViewController.sendScoreToView = {[weak self]
+                (data) in
+                if let weakSelf = self {
+                    weakSelf.doSomethingTestScoreReceived(data)
+                }
+                
             }
-            
+
         }
         
     }
