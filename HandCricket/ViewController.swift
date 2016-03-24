@@ -13,6 +13,10 @@ class ViewController: UIViewController {
         
     }
     
+    
+    //button
+    
+    
     @IBAction func unwindViewTwoView(sender: UIStoryboard) {
         print("It tried to unwind")
     }
@@ -77,7 +81,15 @@ class ViewController: UIViewController {
             
             print("\(myScore) is my Score and \(compScore) is comp score")
             HandCricketBrain().delay(0.3) {
-                self.scoreViewer.text = self.myScore>self.compScore ? "You Win!! Hit Exit" : "You Lose 🙁 Hit Exit"
+                if self.myScore>self.compScore {
+                    self.scoreViewer.text = "You Win!! Hit Exit"
+                }
+                else if self.compScore>self.myScore {
+                    self.scoreViewer.text = "You Lose 🙁 Hit Exit"
+                }
+                else if self.compScore == self.myScore {
+                    self.scoreViewer.text = "It's a Tie! Hit Exit"
+                }
                 self.targetShower.text = ""
             }
             
