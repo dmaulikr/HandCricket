@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -306,6 +306,9 @@
                                 <rect key="frame" x="104" y="567" width="206" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                </variation>
                                 <variation key="widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="104" y="312" width="528" height="30"/>
                                 </variation>
@@ -371,6 +374,9 @@
                                 <rect key="frame" x="104" y="596" width="206" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                </variation>
                                 <variation key="widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="104" y="341" width="528" height="30"/>
                                 </variation>
@@ -488,13 +494,6 @@
                                 <exclude reference="HJN-Xz-SgP"/>
                                 <exclude reference="b8U-Ym-gob"/>
                                 <exclude reference="rUD-T6-Jxx"/>
-                                <exclude reference="8dZ-ze-BMZ"/>
-                                <exclude reference="CN5-Ku-pgY"/>
-                                <exclude reference="I6z-8H-RzQ"/>
-                                <exclude reference="Nkq-vP-VNF"/>
-                                <exclude reference="PEM-eM-5vY"/>
-                                <exclude reference="QMe-ua-m4K"/>
-                                <exclude reference="jTu-RN-A9x"/>
                                 <exclude reference="2ck-9m-5VY"/>
                                 <exclude reference="AI6-d5-gYh"/>
                                 <exclude reference="Ffr-aj-CBE"/>
@@ -503,7 +502,13 @@
                                 <exclude reference="hT0-fx-3fV"/>
                                 <exclude reference="mhL-R4-DMK"/>
                                 <exclude reference="rg5-We-yga"/>
-                                <exclude reference="fMQ-Mm-lIg"/>
+                                <exclude reference="8dZ-ze-BMZ"/>
+                                <exclude reference="CN5-Ku-pgY"/>
+                                <exclude reference="I6z-8H-RzQ"/>
+                                <exclude reference="Nkq-vP-VNF"/>
+                                <exclude reference="PEM-eM-5vY"/>
+                                <exclude reference="QMe-ua-m4K"/>
+                                <exclude reference="jTu-RN-A9x"/>
                                 <exclude reference="CPY-al-QQr"/>
                                 <exclude reference="MJ8-9C-n2g"/>
                                 <exclude reference="WTY-i2-iOM"/>
@@ -523,6 +528,7 @@
                                 <exclude reference="WCX-BI-HEj"/>
                                 <exclude reference="htz-cE-5IO"/>
                                 <exclude reference="vaD-OU-0o5"/>
+                                <exclude reference="fMQ-Mm-lIg"/>
                             </mask>
                         </variation>
                     </view>
@@ -535,7 +541,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ous-Rc-q0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450.5" y="399"/>
+            <point key="canvasLocation" x="1450" y="399"/>
         </scene>
         <!--View Two View Controller-->
         <scene sceneID="eLB-bU-x4u">
@@ -556,7 +562,7 @@
                                     <constraint firstAttribute="width" constant="92" id="2jc-0L-ArC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBk-F2-PBr">
@@ -565,7 +571,7 @@
                                     <constraint firstAttribute="height" constant="45" id="41f-aW-MbP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="194" width="92" height="45"/>
@@ -580,13 +586,13 @@
                                     <constraint firstAttribute="width" constant="92" id="e2z-hG-iUf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-zO-mFv">
                                 <rect key="frame" x="139" y="194" width="92" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp1-oh-biB">
@@ -611,7 +617,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-rK-VPA">
-                                <rect key="frame" x="139" y="462" width="135" height="86"/>
+                                <rect key="frame" x="20" y="462" width="374" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Next Ball"/>
                                 <variation key="widthClass=regular" misplaced="YES">
@@ -642,15 +648,16 @@
                             <constraint firstItem="Wj1-qx-Vj5" firstAttribute="height" secondItem="ljV-ff-gcc" secondAttribute="height" id="JrP-am-Iko"/>
                             <constraint firstItem="Xp1-oh-biB" firstAttribute="trailing" secondItem="oVN-dD-b0e" secondAttribute="trailingMargin" id="McF-85-cnh"/>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="width" secondItem="ljV-ff-gcc" secondAttribute="width" id="N9B-zO-Ylh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dau-rK-VPA" secondAttribute="trailing" id="RrE-48-7Pd"/>
                             <constraint firstItem="ljV-ff-gcc" firstAttribute="leading" secondItem="oVN-dD-b0e" secondAttribute="leadingMargin" constant="5" id="TTG-Zg-QwV"/>
                             <constraint firstItem="ljV-ff-gcc" firstAttribute="firstBaseline" secondItem="Wj1-qx-Vj5" secondAttribute="firstBaseline" id="X62-ed-iJv"/>
                             <constraint firstItem="N4a-zO-mFv" firstAttribute="trailing" secondItem="Wj1-qx-Vj5" secondAttribute="trailing" id="a3v-f1-OMw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Dau-rK-VPA" secondAttribute="leading" id="dgg-Yu-IXS"/>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="baseline" secondItem="N4a-zO-mFv" secondAttribute="baseline" id="hK1-OE-6a4"/>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="top" secondItem="ljV-ff-gcc" secondAttribute="bottom" constant="8" symbolic="YES" id="ose-Y0-6bk"/>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="trailing" secondItem="ljV-ff-gcc" secondAttribute="trailing" id="plf-jS-cXP"/>
                             <constraint firstItem="7zu-NG-5V8" firstAttribute="top" secondItem="Dau-rK-VPA" secondAttribute="bottom" constant="188" id="qCx-sm-vNd"/>
                             <constraint firstItem="Xp1-oh-biB" firstAttribute="leading" secondItem="oVN-dD-b0e" secondAttribute="leadingMargin" id="rdg-cd-JjW"/>
-                            <constraint firstItem="Dau-rK-VPA" firstAttribute="leading" secondItem="N4a-zO-mFv" secondAttribute="leading" id="sZG-Ha-xPu"/>
                             <constraint firstItem="Xp1-oh-biB" firstAttribute="centerY" secondItem="oVN-dD-b0e" secondAttribute="centerY" id="tOX-5l-feq"/>
                             <constraint firstItem="Wj1-qx-Vj5" firstAttribute="leading" secondItem="ljV-ff-gcc" secondAttribute="trailing" constant="22" id="wif-Fe-2zr"/>
                         </constraints>
@@ -720,7 +727,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Pick a number between 1 - 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91F-N7-nts">
                                 <rect key="frame" x="28" y="179" width="358" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="20" y="107" width="696" height="21"/>
@@ -729,7 +736,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- If the bowler picks a different number from the batsman's, the number the batsman picked gets added to the score" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o19-nL-JzK">
                                 <rect key="frame" x="28" y="208" width="358" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="20" y="147" width="696" height="68"/>
@@ -738,7 +745,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- If bowler selects the same number, the batsman is out and his score is the target" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJb-Bc-hwT">
                                 <rect key="frame" x="28" y="277" width="358" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="20" y="223" width="696" height="50"/>
