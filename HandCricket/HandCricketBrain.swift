@@ -22,7 +22,7 @@ struct HandCricketBrain {
     
     var randomnumber : Int {
         get {
-            return [1,2,3,4,5,5,6,6][Int(arc4random_uniform(8)+0)]
+            return [1,2,3,4,5,6][Int(arc4random_uniform(6)+0)]
         }
     }
     
