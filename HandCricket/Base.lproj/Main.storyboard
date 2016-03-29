@@ -442,6 +442,7 @@
                             <constraint firstItem="NQz-X3-CTF" firstAttribute="height" secondItem="FTg-rH-NPU" secondAttribute="height" id="CLU-EY-GZx"/>
                             <constraint firstItem="4Lc-s9-u1n" firstAttribute="height" secondItem="3lA-AF-Uxc" secondAttribute="height" id="CN5-Ku-pgY"/>
                             <constraint firstItem="sat-Rx-ebC" firstAttribute="baseline" secondItem="ZCj-Fn-x8R" secondAttribute="baseline" id="CPY-al-QQr"/>
+                            <constraint firstItem="rge-oa-djK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KrF-Ma-J2O" secondAttribute="bottom" constant="1" id="DOp-JL-i0m"/>
                             <constraint firstItem="FTg-rH-NPU" firstAttribute="leading" secondItem="16g-eS-nRn" secondAttribute="leadingMargin" constant="84" id="EgR-st-zZQ"/>
                             <constraint firstItem="rge-oa-djK" firstAttribute="height" secondItem="3lA-AF-Uxc" secondAttribute="height" id="Ffr-aj-CBE"/>
                             <constraint firstItem="NQz-X3-CTF" firstAttribute="width" secondItem="FTg-rH-NPU" secondAttribute="width" id="FmC-nF-pN3"/>
@@ -488,6 +489,11 @@
                             <constraint firstItem="NQz-X3-CTF" firstAttribute="centerX" secondItem="16g-eS-nRn" secondAttribute="centerX" id="vHj-mI-8Ge"/>
                             <constraint firstItem="ZCj-Fn-x8R" firstAttribute="height" secondItem="3lA-AF-Uxc" secondAttribute="height" id="vaD-OU-0o5"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UgH-Mg-4hG"/>
+                            </mask>
+                        </variation>
                         <variation key="widthClass=regular">
                             <mask key="constraints">
                                 <exclude reference="UgH-Mg-4hG"/>
@@ -633,12 +639,21 @@
                                     <action selector="backToViewController:" destination="zwg-kD-6F9" eventType="touchUpInside" id="h22-8W-dcz"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esn-TL-nKC" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="686" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Bb-5i-jwI"/>
+                                    <constraint firstAttribute="width" constant="320" id="5XL-uc-SrD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="leading" secondItem="ljV-ff-gcc" secondAttribute="leading" id="1t5-7b-CJf"/>
                             <constraint firstItem="Wj1-qx-Vj5" firstAttribute="baseline" secondItem="ljV-ff-gcc" secondAttribute="baseline" id="2F6-VK-hwK"/>
                             <constraint firstItem="Wj1-qx-Vj5" firstAttribute="width" secondItem="ljV-ff-gcc" secondAttribute="width" id="6VW-rr-6vX"/>
+                            <constraint firstItem="esn-TL-nKC" firstAttribute="centerX" secondItem="oVN-dD-b0e" secondAttribute="centerX" id="9Xf-Dh-Y4t"/>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="height" secondItem="ljV-ff-gcc" secondAttribute="height" id="DwR-n7-w44"/>
                             <constraint firstItem="ljV-ff-gcc" firstAttribute="top" secondItem="f3V-9B-iGz" secondAttribute="bottom" constant="121" id="Fhs-FL-t1L"/>
                             <constraint firstItem="Dau-rK-VPA" firstAttribute="top" secondItem="Xp1-oh-biB" secondAttribute="bottom" constant="68" id="Fr7-tA-nmX"/>
@@ -652,6 +667,7 @@
                             <constraint firstItem="ljV-ff-gcc" firstAttribute="leading" secondItem="oVN-dD-b0e" secondAttribute="leadingMargin" constant="5" id="TTG-Zg-QwV"/>
                             <constraint firstItem="ljV-ff-gcc" firstAttribute="firstBaseline" secondItem="Wj1-qx-Vj5" secondAttribute="firstBaseline" id="X62-ed-iJv"/>
                             <constraint firstItem="N4a-zO-mFv" firstAttribute="trailing" secondItem="Wj1-qx-Vj5" secondAttribute="trailing" id="a3v-f1-OMw"/>
+                            <constraint firstItem="7zu-NG-5V8" firstAttribute="top" secondItem="esn-TL-nKC" secondAttribute="bottom" id="c2R-SM-79H"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Dau-rK-VPA" secondAttribute="leading" id="dgg-Yu-IXS"/>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="baseline" secondItem="N4a-zO-mFv" secondAttribute="baseline" id="hK1-OE-6a4"/>
                             <constraint firstItem="oBk-F2-PBr" firstAttribute="top" secondItem="ljV-ff-gcc" secondAttribute="bottom" constant="8" symbolic="YES" id="ose-Y0-6bk"/>
@@ -664,6 +680,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="bannerAd" destination="esn-TL-nKC" id="Wsh-8k-boV"/>
                         <outlet property="computerPick" destination="N4a-zO-mFv" id="l2S-y6-3o7"/>
                         <outlet property="playViewer" destination="Xp1-oh-biB" id="Slz-Sb-JOu"/>
                         <outlet property="testOutlet" destination="Wj1-qx-Vj5" id="muV-rw-tPb"/>

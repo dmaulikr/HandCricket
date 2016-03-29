@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import GoogleMobileAds
 
 class ViewController: UIViewController {
     @IBAction func pick(sender: UIButton) {

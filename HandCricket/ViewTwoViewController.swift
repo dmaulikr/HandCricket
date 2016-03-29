@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 
 class ViewTwoViewController: UIViewController {
@@ -15,6 +16,8 @@ class ViewTwoViewController: UIViewController {
     @IBAction func backToViewController(sender: UIButton) {
         self.dismissViewControllerAnimated(false, completion: nil)
     }
+    
+    @IBOutlet var bannerAd: GADBannerView!
     
     var sendScoreToView : ((data: Int) -> ())?
     
@@ -27,6 +30,13 @@ class ViewTwoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // add banner to app from Google admob
+        self.bannerAd.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        self.bannerAd.rootViewController = self
+        let request : GADRequest = GADRequest()
+        self.bannerAd.loadRequest(request)
+        
         // call the class to find a random number
         let computerPickScore = HandCricketBrain().randomnumber
         
